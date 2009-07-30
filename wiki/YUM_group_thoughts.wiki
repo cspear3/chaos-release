@@ -24,6 +24,8 @@ opt -rpms that use modules, and install into /opt
 
 opt.openib - rpms that use modules, install into /opt, will require openib YUM group. Should directory structure in /opt have a sub dir with interconnect name?
 
-opt.INTERCONNECT - Should we assume that more interconnects may come out, maybe just think 10GigE?
+opt._INTERCONNECT_ - Should we assume that more interconnects may come out, maybe just think 10GigE?
+
+just.works._INTERCONNECT_ - has mpi stuff in system locations so that modules wouldn't need to be used to get mpi working? should match versions that are in /opt
 
 Drivers - Drivers that are cutting edge that we don't usually install, but some may need
