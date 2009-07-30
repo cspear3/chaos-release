@@ -20,7 +20,7 @@ nfsroot - rpms for booting diskless nodes
 
 openib - rpms for running an OpenIB cluster, this will include Slurm YUM group and add IB specific slurm rpms
 
-opt -rpms that use modules, and install into /opt
+opt - rpms that use modules, and install into /opt
 
 opt.openib - rpms that use modules, install into /opt, will require openib YUM group. Should directory structure in /opt have a sub dir with interconnect name?
 
