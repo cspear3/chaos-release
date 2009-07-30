@@ -1,0 +1,29 @@
+#YUM groups for CHAOS 5
+
+= Details =
+
+Just getting down some thoughts on YUM group structure for CHAOS 5
+
+= YUM groups and purpose =
+
+Base - rpms that go on all node. Maybe this should be extremely minimal and provide more YUM groups.
+
+Slurm - generic slurm rpms, no interconnect specific slurm rpms
+
+Desktop - rpms like openoffice and so on. Maybe we shoot this group in chaos, and move to Base YUM group?
+
+Lustre - lustre client and tools
+
+Lustre.server - lustre server and tools
+
+nfsroot - rpms for booting diskless nodes
+
+openib - rpms for running an OpenIB cluster, this will include Slurm YUM group and add IB specific slurm rpms
+
+opt -rpms that use modules, and install into /opt
+
+opt.openib - rpms that use modules, install into /opt, will require openib YUM group. Should directory structure in /opt have a sub dir with interconnect name?
+
+opt.INTERCONNECT - Should we assume that more interconnects may come out, maybe just think 10GigE?
+
+Drivers - Drivers that are cutting edge that we don't usually install, but some may need
