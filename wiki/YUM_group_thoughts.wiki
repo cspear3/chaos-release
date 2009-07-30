@@ -28,4 +28,6 @@ opt._INTERCONNECT_ - Should we assume that more interconnects may come out, mayb
 
 just.works._INTERCONNECT_ - has mpi stuff in system locations so that modules wouldn't need to be used to get mpi working? should match versions that are in /opt
 
-Drivers - Drivers that are cutting edge that we don't usually install, but some may need
+Drivers - Drivers that are cutting edge that we don't usually install, but some people may want to try
+
+FW - Firmware for various motherboards, IB cards, and so on that we have
