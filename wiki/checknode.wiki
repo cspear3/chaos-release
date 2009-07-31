@@ -5,26 +5,28 @@
 Things we want to check on a cluster. This may change runlevels, not sure yet.
 
 
-*cpu MHz*
+*cpu MHz* - verify cpus are running at expected speed. 
 
-*cpuspeed*
+*cpuspeed* - is cpuspeed working. Bios setting could be wrong and cpuspeed can't start.
 
-*swap*
+*swap* - is the amount of swap available expected.
 
-*bios version*
+*bios version* - verify bios version is correct. All nodes of the same type should have the same version.
 
-*interface IPs*
+*interface IPs* - verify IP address match for the node
 
-*IB card Firmware version*
+*IB card Firmware version* - verify IB firmware version. All nodes within a IB family should have the same firmware version installed.
 
-*IB link speed*
+*IB link speed* - verify IB card linked at the correct speed. 
 
-*hard drive performance*
+*hard drive performance* - verify hard drive is ok. A slow hard drive means it is probably going to fail. 
 
-*number of memory errors*
+*number of memory errors* - check number of memory errors that have occurred. Replace memory that is getting single bit memory errors, or worse multi-bit memory errors.
 
-*ecc*
+*ecc* - verify ecc is on, and the correct type is on. ECC types are:
+ * S4ECD4ED = ECC with chipkill
+ * SECDED = ECC, no chipkill
 
-*amount of memory*
+*amount of memory* - verify all the memory is available.
 
 *
