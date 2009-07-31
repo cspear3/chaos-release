@@ -2,12 +2,29 @@
 
 = Checknode =
 
-Add your content here.
+Things we want to check on a cluster. This may change runlevels, not sure yet.
 
 
-= Details =
+*cpu MHz*
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*cpuspeed*
+
+*swap*
+
+*bios version*
+
+*interface IPs*
+
+*IB card Firmware versino*
+
+*IB link speed*
+
+*hard drive performance*
+
+*number of memory errors*
+
+*ecc*
+
+*amount of memory*
+
+*
