@@ -15,7 +15,7 @@ Things we want to check on a cluster. This may change runlevels, not sure yet.
 
 *interface IPs*
 
-*IB card Firmware versino*
+*IB card Firmware version*
 
 *IB link speed*
 
