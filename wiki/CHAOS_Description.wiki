@@ -1,4 +1,4 @@
-#CHAOS Description 
+#CHAOS Description
 
 == What is CHAOS? ==
 
@@ -34,11 +34,11 @@ and useful things worthy of study in their own right, but they are all
 available as open source which any HPC site could integrate into their
 environment.  The main reasons it may be useful to leverage CHAOS is it:
 
-* runs reliably in HPC production environments at the aforementioned labs,
-* runs on high-performance hardware that is regularly refreshed,
-* is subject to a high degree of scrutiny in the security arena,
-* contains a selection of software that represents years of experience
-  running large clusters (Linux and otherwise).
+  * runs reliably in HPC production environments at the aforementioned labs,
+  * runs on high-performance hardware that is regularly refreshed,
+  * is subject to a high degree of scrutiny in the security arena,
+  * contains a selection of software that represents years of experience
+    running large clusters (Linux and otherwise).
 
 On the other hand, the fact that CHAOS is geared toward production computing
 environments may be a negative for labs engaged in operating systems research.
@@ -50,12 +50,12 @@ kernel facilities.
 
 These are the major components that we focus on when building CHAOS,
 as opposed to the things that just work in the base OS and are brought along:
-* kernel
-* SLURM resource manager (job launch and batch management)
-* Lustre parallel file system (clients and servers)
-* Cluster sys admin tools (pdsh, powerman, conman, genders, skummee/netsnmp,
-  etc.),
-* MPI and associated development environment.
+  * modified kernel
+  * SLURM resource manager (job launch and batch management)
+  * Lustre parallel file system (clients and servers)
+  * Cluster sys admin tools (pdsh, powerman, conman, genders, skummee/netsnmp,
+    etc.),
+  * MPI and associated development environment.
 
 == What is not Included in CHAOS? ==
 
@@ -103,18 +103,14 @@ as well.
 
 == References ==
 
-[https://computing.llnl.gov/linux/ucrl-id-151968.html
-Building CHAOS: An Operating System for Livermore Linux Clusters]
+[https://computing.llnl.gov/linux/ucrl-id-151968.html Building CHAOS: An Operating System for Livermore Linux Clusters]
 by Dunlap and Garlick.
 
-[https://computing.llnl.gov/linux/ucrl-id-150021.html
-Linux Project report]
+[https://computing.llnl.gov/linux/ucrl-id-150021.html Linux Project report]
 by Dunlap and Garlick.
 
-[https://computing.llnl.gov/linux/ucrl-jc-153559.html
-Achieving Order through CHAOS: the LLNL HPC Linux Cluster Experience]
+[https://computing.llnl.gov/linux/ucrl-jc-153559.html Achieving Order through CHAOS: the LLNL HPC Linux Cluster Experience]
 by Braby, Garlick, and Goldstone.
 
-[http://www.sandia.gov/NNSA/ASC/enews/1207/1207trilab-capacity.html
-Common Tri-Lab Capacity Computing Moves Closer to Goal],
+[http://www.sandia.gov/NNSA/ASC/enews/1207/1207trilab-capacity.html Common Tri-Lab Capacity Computing Moves Closer to Goal],
 Press Release, Sandia National Laboratory.
