@@ -37,8 +37,7 @@ environment.  The main reasons it may be useful to leverage CHAOS is it:
   * runs reliably in HPC production environments at the aforementioned labs,
   * runs on high-performance hardware that is regularly refreshed,
   * is subject to a high degree of scrutiny in the security arena,
-  * contains a selection of software that represents years of experience
-    running large clusters (Linux and otherwise).
+  * contains a selection of software that represents years of experience running large clusters (Linux and otherwise).
 
 On the other hand, the fact that CHAOS is geared toward production computing
 environments may be a negative for labs engaged in operating systems research.
@@ -53,8 +52,7 @@ as opposed to the things that just work in the base OS and are brought along:
   * modified kernel
   * SLURM resource manager (job launch and batch management)
   * Lustre parallel file system (clients and servers)
-  * Cluster sys admin tools (pdsh, powerman, conman, genders, skummee/netsnmp,
-    etc.),
+  * Cluster sys admin tools (pdsh, powerman, conman, genders, skummee/netsnmp, etc.),
   * MPI and associated development environment.
 
 == What is not Included in CHAOS? ==
