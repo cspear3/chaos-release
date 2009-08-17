@@ -5,7 +5,7 @@
 CHAOS is a Red Hat Linux derived operating system for Linux clusters,
 primarily for running MPI programs, but also recently used for
 building Lustre file system clusters and technical desktop systems.
-Early releases of CHAOS were based on Red Hat Linux and used
+Early releases of CHAOS [1,2,3] were based on Red Hat Linux and used
 exclusively in-house at Lawrence Livermore National Laboratory.
 
 || *Name*    || *Date* || *Base* || *Arches* || *Interconnects* ||
@@ -17,7 +17,7 @@ exclusively in-house at Lawrence Livermore National Laboratory.
 In 2008, distribution was extended to the Sandia and Los Alamos
 National Laboratories in support of a joint tri-lab cluster procurement.
 CHAOS 4.0 was thus given the external moniker of TOSS 1.0.
-TOSS stands for Tri-lab Operating System Software.
+TOSS [4] stands for Tri-lab Operating System Software.
 
 In 2010, the plan is to continue to maintain TOSS as the Red Hat Enterprise
 Linux based tri-lab operating system, and rebase CHAOS on CentOS and make
@@ -27,17 +27,17 @@ it publicly available.
 
 CHAOS is not rocket science.  It is a bundling of software and an
 associated process that made our lives more sane at LLNL for several years
-as we increased our Linux cluster deployements.  Some of the software bundled
+as we increased our Linux cluster deployments.  Some of the software bundled
 in CHAOS such as the Lustre file system, the SLURM resource manager,
 the MPI environments, and cluster admin tools are indeed rather clever
 and useful things worthy of study in their own right, but they are all
 available as open source which any HPC site could integrate into their
-environment.  The main reasons it may be useful to leverage CHAOS is it:
+environment.  The main reasons it may be useful to leverage CHAOS is:
 
-  * runs reliably in HPC production environments at the aforementioned labs,
-  * runs on high-performance hardware that is regularly refreshed,
-  * is subject to a high degree of scrutiny in the security arena,
-  * contains a selection of software that represents years of experience running large clusters (Linux and otherwise).
+  * CHAOS runs reliably in HPC production environments at the aforementioned labs;
+  * CHAOS runs on high-performance hardware that is regularly refreshed,
+  * CHAOS is subject to a high degree of scrutiny in the security arena,
+  * CHAOS contains a selection of software that represents years of experience running large clusters (Linux and otherwise).
 
 On the other hand, the fact that CHAOS is geared toward production computing
 environments may be a negative for labs engaged in operating systems research.
@@ -52,10 +52,10 @@ as opposed to the things that just work in the base OS and are brought along:
   * modified kernel
   * SLURM resource manager (job launch and batch management)
   * Lustre parallel file system (clients and servers)
-  * Cluster sys admin tools (pdsh, powerman, conman, genders, skummee/netsnmp, etc.),
+  * Cluster sys admin tools (pdsh, powerman, conman, genders, skummee/netsnmp, cerebro, etc.),
   * MPI and associated development environment.
 
-== What is not Included in CHAOS? ==
+== What is Not Included? ==
 
 Not a lot of effort has gone into including the various scientific libraries
 that many of our customers use.  This is because it seems every site has a
@@ -101,14 +101,14 @@ as well.
 
 == References ==
 
-[https://computing.llnl.gov/linux/ucrl-id-151968.html Building CHAOS: An Operating System for Livermore Linux Clusters]
+[1] [https://computing.llnl.gov/linux/ucrl-id-151968.html Building CHAOS: An Operating System for Livermore Linux Clusters]
 by Dunlap and Garlick.
 
-[https://computing.llnl.gov/linux/ucrl-id-150021.html Linux Project report]
+[2] [https://computing.llnl.gov/linux/ucrl-id-150021.html Linux Project report]
 by Dunlap and Garlick.
 
-[https://computing.llnl.gov/linux/ucrl-jc-153559.html Achieving Order through CHAOS: the LLNL HPC Linux Cluster Experience]
+[3] [https://computing.llnl.gov/linux/ucrl-jc-153559.html Achieving Order through CHAOS: the LLNL HPC Linux Cluster Experience]
 by Braby, Garlick, and Goldstone.
 
-[http://www.sandia.gov/NNSA/ASC/enews/1207/1207trilab-capacity.html Common Tri-Lab Capacity Computing Moves Closer to Goal],
+[4] [http://www.sandia.gov/NNSA/ASC/enews/1207/1207trilab-capacity.html Common Tri-Lab Capacity Computing Moves Closer to Goal],
 Press Release, Sandia National Laboratory.
