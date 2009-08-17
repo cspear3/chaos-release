@@ -73,7 +73,7 @@ Non-free software such as non-GNU compilers, math libraries, totalview
 debugger, etc. are not included in CHAOS due to redistribution restrictions.
 We do package some of these tools for TOSS and could privde spec files and
 such should people find that to be useful, but licensing forbids us to
-freely redistribute these packages so they are not included.
+freely redistribute these packages.
 
 == What is the CHAOS Release Cycle? ==
 
@@ -86,18 +86,18 @@ update comes out if we feel our release is not yet stable.  After the major
 release, however, upstream update releases are rigorously tracked,
 with our minor release lagging by a few months.
 
-Major and minor CHAOS releases are gated by tests on real systems, including
-times where we steal one of our largest production systems for a week or
-so and try out the new software on it.  This will include, for example,
+Between minor releases, we do TOSS bugfix/security updates on an as-needed
+basis.  These updates will be provided immediately in the CHAOS releases
+as well.
+
+Major and minor CHAOS releases are gated by rigorous testing on real systems,
+including times where we steal one of our largest production systems for a
+week or so and try out the new software on it.  This will include, for example,
 giving the Lustre file system a serious round of beatings, and running many
 large scientific apps over and over checking the results.  After the three
 labs sign off on a TOSS release, the public CHAOS release will be made.
 Other than being rebased on CentOS and omitting some software with licensing
 restrictions, CHAOS will be identical to TOSS.
-
-Between minor updates, we do TOSS bugfix/security updates on an as-needed
-basis.  These updates will be provided immediately in the CHAOS releases
-as well.
 
 == References ==
 
