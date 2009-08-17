@@ -5,7 +5,7 @@
 CHAOS is a Red Hat Linux derived operating system for Linux clusters,
 primarily for running MPI programs, but also recently used for
 building Lustre file system clusters and technical desktop systems.
-Early releases of CHAOS [1,2,3] were based on Red Hat Linux and used
+Early releases of CHAOS {{{[1,2,3]}}} were based on Red Hat Linux and used
 exclusively in-house at Lawrence Livermore National Laboratory.
 
 || *Name*    || *Date* || *Base* || *Arches* || *Interconnects* ||
@@ -17,7 +17,7 @@ exclusively in-house at Lawrence Livermore National Laboratory.
 In 2008, distribution was extended to the Sandia and Los Alamos
 National Laboratories in support of a joint tri-lab cluster procurement.
 CHAOS 4.0 was thus given the external moniker of TOSS 1.0.
-TOSS [4] stands for Tri-lab Operating System Software.
+TOSS {{{[4]}}} stands for Tri-lab Operating System Software.
 
 In 2010, the plan is to continue to maintain TOSS as the Red Hat Enterprise
 Linux based tri-lab operating system, and rebase CHAOS on CentOS and make
@@ -101,14 +101,14 @@ as well.
 
 == References ==
 
-[1] [https://computing.llnl.gov/linux/ucrl-id-151968.html Building CHAOS: An Operating System for Livermore Linux Clusters]
+{{{[1]}}} [https://computing.llnl.gov/linux/ucrl-id-151968.html Building CHAOS: An Operating System for Livermore Linux Clusters]
 by Dunlap and Garlick.
 
-[2] [https://computing.llnl.gov/linux/ucrl-id-150021.html Linux Project report]
+{{{[2]}}} [https://computing.llnl.gov/linux/ucrl-id-150021.html Linux Project report]
 by Dunlap and Garlick.
 
-[3] [https://computing.llnl.gov/linux/ucrl-jc-153559.html Achieving Order through CHAOS: the LLNL HPC Linux Cluster Experience]
+{{{[3]}}} [https://computing.llnl.gov/linux/ucrl-jc-153559.html Achieving Order through CHAOS: the LLNL HPC Linux Cluster Experience]
 by Braby, Garlick, and Goldstone.
 
-[4] [http://www.sandia.gov/NNSA/ASC/enews/1207/1207trilab-capacity.html Common Tri-Lab Capacity Computing Moves Closer to Goal],
+{{{[4]}}} [http://www.sandia.gov/NNSA/ASC/enews/1207/1207trilab-capacity.html Common Tri-Lab Capacity Computing Moves Closer to Goal],
 Press Release, Sandia National Laboratory.
