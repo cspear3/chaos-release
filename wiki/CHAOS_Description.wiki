@@ -3,25 +3,26 @@
 == What is CHAOS? ==
 
 CHAOS is a Red Hat Linux derived operating system for Linux clusters,
-primarily for running MPI programs, but also recently used for
-building Lustre file system clusters and technical desktop systems.
+primarily those designed to run MPI programs, but also for visualization
+clusters, Lustre file system server clusters, and technical desktop systems.
 Early releases of CHAOS {{{[1,2,3]}}} were based on Red Hat Linux and used
 exclusively in-house at Lawrence Livermore National Laboratory.
 
-|| *Name*    || *Date* || *Base* || *Arches* || *Interconnects* ||
+|| *Name*    || *Date* || *Base OS* || *Architectures* || *Interconnects* ||
 || CHAOS 1.0 || July 2002 || RHL 7.3 || i386 || Elan3 ||
 || CHAOS 2.0 || July 2004 || RHEL 3 || i386,ia64 || Elan3,Elan4 ||
 || CHAOS 3.0 || Oct 2005  || RHEL 4 || i386,ia64,x86_64 || Elan3,Elan4,Infiniband ||
 || CHAOS 4.0/TOSS 1.0 || Feb 2008 || RHEL 5 || x86_64 || Infiniband ||
+|| CHAOS 5.0/TOSS 2.0 || est. Jan 2011 || RHEL 6 || x86_64 || Infiniband ||
 
 In 2008, distribution was extended to the Sandia and Los Alamos
 National Laboratories in support of a joint tri-lab cluster procurement.
 CHAOS 4.0 was thus given the external moniker of TOSS 1.0.
-TOSS {{{[4]}}} stands for Tri-lab Operating System Software.
+TOSS {{{[4]}}} stands for Tripod Operating System Software.
 
-In 2010, the plan is to continue to maintain TOSS as the Red Hat Enterprise
-Linux based tri-lab operating system, and rebase CHAOS on CentOS and make
-it publicly available.
+The plan for 2010 and beyond is to continue to maintain TOSS as the Red
+Hat Enterprise Linux based tri-lab operating system, rebase CHAOS on
+CentOS, and make it publicly available.
 
 == Why CHAOS? ==
 
@@ -34,7 +35,7 @@ and useful things worthy of study in their own right, but they are all
 available as open source which any HPC site could integrate into their
 environment.  The main reasons it may be useful to leverage CHAOS is:
 
-  * CHAOS runs reliably in HPC production environments at the aforementioned labs;
+  * CHAOS must run reliably in HPC production environments at the aforementioned labs;
   * CHAOS runs on high-performance hardware that is regularly refreshed,
   * CHAOS is subject to a high degree of scrutiny in the security arena,
   * CHAOS contains a selection of software that represents years of experience running large clusters (Linux and otherwise).
