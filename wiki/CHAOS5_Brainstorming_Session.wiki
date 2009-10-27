@@ -1,0 +1,55 @@
+# CHAOS 5 Brainstorming
+
+=== Release Dates ===
+
+GA prior to SC 2010 (November)
+
+Beta to allow Lustre/ZFS file system test July 2010.
+
+=== Ideas ===
+
+  * Lustre w/ ZFS
+  * IO Forwarding via modified 9P (fault tolerance?)
+  * Modified service startup
+    * Upstart
+    * Possible new cluster run levels
+    * Checknode as an init script/package
+  * Key management (possible flash storage in node?)
+  * RAS/cerebro more functionality / skummee config
+  * Get rid of nodeup
+  * Simple cluster config / cluster configuration language
+  * 12K node support / 48 cores per node
+  * GPGPU w/ OpenCL and nvidia drivers
+  * KVM & slurm
+  * Job container
+  * Chaos (rename?, new acronym?)=Centos/SCILinux
+  * TOSS=RHEL
+  * All packages on an external repository
+  * GPL v3 packages
+  * Nfsroot config management
+  * Nfsroot no reboot for rpm updates (kernel?)
+  * Security audit / software & services
+  * NFS v4
+  * SELinux
+  * IPv6 / IPSEC
+    * IPoIB ARP storm solution?
+  * Krb credential management
+  * External documents on doing everything
+    * Cookie wiki on stuff we tested
+  * Noise testing
+    * NTP or something better, Skummee, Slurm, Cerebro
+  * GPFS support
+  * PanFS support
+  * SSD for checkpointing, etc.
+  * DNS all IPs, DNSMasq?
+  * DHCP all interfaces
+  * Modules: MPIs, Compilers, Tools
+  * Allow multiple clusters to be managed via 1 node
+    * slurm/moab partitions
+  * Alternative fabric topologies
+  * Kernel splice
+  * Firmware management framework
+  * Private-mount root per job
+  * Check out OSCAR, Rocks, Scyld (penguin)
+  * SimCluster
+  * Hadoop/HPFS support
