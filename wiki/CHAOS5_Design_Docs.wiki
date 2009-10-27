@@ -1,5 +1,5 @@
 # CHAOS5 Design Docs
 
-  * [CHAOS5_Design_Docs/YUM_group_thoughts.wiki YUM Group Thoughts]
+  * [http://code.google.com/p/chaos-release/wiki/CHAOS5_Design_Docs/YUM_group_thoughts.wiki YUM Group Thoughts]
 
-  * [CHAOS5_Design_Docs/checknode.wiki Checknode]
+  * [http://code.google.com/p/chaos-release/wiki/CHAOS5_Design_Docs/checknode.wiki Checknode]
