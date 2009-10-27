@@ -1,7 +1,5 @@
 # CHAOS5 Design Docs
 
-== CHAOS 5 Design Docs ==
+  * CHAOS5_Design_Docs/YUM_group_thoughts.wiki
 
-  * [CHAOS5_Design_Docs/YUM_group_thoughts.wiki]
-
-  * [CHAOS5_Design_Docs/checknode.txt]
+  * CHAOS5_Design_Docs/checknode.wiki
