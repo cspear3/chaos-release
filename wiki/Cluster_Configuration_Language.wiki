@@ -2,7 +2,7 @@
 
 = Introduction =
 
-A defined format that would be filled out to create many of the cluster files.
+A defined format that would be filled out to create cluster files.
 
 Needs to define
 
