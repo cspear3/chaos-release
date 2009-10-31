@@ -33,7 +33,7 @@ U level
 31 [e|c|p]graph31
 30 [e|c|p]graph32
 
-*Ethernet Cable*
+*Ethernet Cable - Not needed for config files, but needed to build a cluster right*
 ###     SRC             DST     Node_type  Cable_length cable_color CAT
 25      egraph25        sw1p1   Compute (1U)    5       blue        CAT5e
 26      egraph26        sw1p2   Compute (1U)    5       blue        CAT5e
@@ -44,7 +44,7 @@ U level
 31      egraph31        sw1p7   Compute (1U)    5       blue        CAT5e
 32      egraph32        sw1p8   Compute (1U)    7       blue        CAT5e
 
-*Serial Console Cable*
+*Serial Console Cable - Use to create conman.conf files*
 ###     U_level SRC             DST cable_length cable_color CAT
 25      37      cgraph25        cyc1p1  5       white        CAT5e
 26      36      cgraph26        cyc1p2  5       white        CAT5e
@@ -55,7 +55,7 @@ U level
 31      31      cgraph31        cyc1p7  5       white        CAT5e
 32      30      cgraph32        cyc1p8  7       white        CAT5e
 
-*power cables*
+*power cables - Use to create powerman.conf files*
 ###     SRC      DST     PDU#   Phase   DST_port Label information Cable_length
 30      ibsw3p1  pdu2p47 pdu2   phase6  p47      ibsw3p1:pdu2p47       1.5m
 31      ibsw3p2  pdu2p46 pdu2   phase6  p46      ibsw3p2:pdu2p46       1m
