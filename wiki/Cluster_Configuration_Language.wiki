@@ -14,7 +14,7 @@ Node
 
   Node type - Compute, Mgmt, Router, Login.....
 
-= Example of what works from Speadsheet -> Person -> configfiles =
+= Example of what works from Speadsheet -> Person -> config files =
 
 {{{
 *Names and location - Used to create slurm.conf and genders file*
