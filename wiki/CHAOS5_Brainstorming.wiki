@@ -111,3 +111,25 @@ just.works._INTERCONNECT_ - has mpi stuff in system locations so that modules wo
 Drivers - Drivers that are cutting edge that we don't usually install, but some people may want to try
 
 FW - Firmware for various motherboards, IB cards, and so on that we have
+
+=== 12K cluster point design ===
+
+Attempt to design design CHAOS 5 to scale to 12K nodes. Building a cluster this way is not necessarily a good idea, but will help focus the software development.
+
+12K cluster detail. 
+
+18 - 648 port top level IB switches
+
+648 - 36 port leaf switches, 18 links to nodes, 18 links to top level switches, 1 per top level switch
+
+node = quad socket, 12 cores per socket, 48 cores total. 128 GB ram per node
+
+total node count - 11,664
+
+total core count - 559,872
+
+total memory count - 1,492,992 = 1.5 PB
+
+~ Power 1 node = 1KW*11664=11.6MW
+
+~ performance = 48cores*2GHz*4operations = 384 GF/s*11664 = 4.478 PF/s
