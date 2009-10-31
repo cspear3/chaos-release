@@ -17,21 +17,21 @@ Node
 = Example of what works from Speadsheet -> Person -> configfiles =
 
 {{{
-*Names and location*
-U level
+*Names and location - Used to create slurm.conf and genders file*
+U_level Name Type
 42 ibsw3
 41 ibsw4
 40 ibsw5
 39 sw1
 38 cyc1
-37 [e|c|p]graph25
-36 [e|c|p]graph26
-35 [e|c|p]graph27
-34 [e|c|p]graph28
-33 [e|c|p]graph29
-32 [e|c|p]graph30
-31 [e|c|p]graph31
-30 [e|c|p]graph32
+37 [e|c|p]graph25 Mgmt
+36 [e|c|p]graph26 login
+35 [e|c|p]graph27 compute
+34 [e|c|p]graph28 compute
+33 [e|c|p]graph29 compute
+32 [e|c|p]graph30 compute
+31 [e|c|p]graph31 compute
+30 [e|c|p]graph32 compute
 
 *Ethernet Cable - Not needed for config files, but needed to build a cluster right*
 ###     SRC             DST     Node_type  Cable_length cable_color CAT
