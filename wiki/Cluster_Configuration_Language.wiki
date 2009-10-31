@@ -12,7 +12,7 @@ Node
   Node location
     Logical - Device(s)#,port(s)#
 
-  Node job - Compute, MGMT, Router, Login.....
+  Node type - Compute, MGMT, Router, Login.....
 
 = Example of what works from Speadsheet -> Person -> configfiles =
 
