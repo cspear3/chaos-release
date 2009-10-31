@@ -75,3 +75,17 @@ U_level Name Type
 45      pgraph32 pdu2p35 pdu2   phase5  p35      pgraph32:pdu2p35      1m
 
 }}}
+
+=== Other info required for checknode / slurm / genders that we gather ===
+
+  Number of sockets
+
+  Number of cores per socket
+
+  CPU speed
+
+  Firmware versions - bios, IB, 10GigE
+
+  amount of memory
+
+  ECC type
