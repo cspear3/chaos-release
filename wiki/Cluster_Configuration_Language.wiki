@@ -11,8 +11,13 @@ Node
 
   Node location
     Logical - Device(s)#,port(s)#
+      Serial console
+      mgmt network
+      Highspeed connection
 
   Node type - Compute, Mgmt, Router, Login.....
+
+  Node info - CPU MHz, Memory, Memory type, Bios info, FW info
 
 = Example of what works from Speadsheet -> Person -> config files =
 
