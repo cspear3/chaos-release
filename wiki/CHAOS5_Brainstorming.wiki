@@ -124,6 +124,16 @@ Attempt to design design CHAOS 5 to scale to 12K nodes. Building a cluster this 
 
 node = quad socket, 12 cores per socket, 48 cores total. 128 GB ram per node
 
+Scalable unit = 324 nodes: 1 mgmt node, 1 login node, 8 gateway nodes, 314 compute nodes
+
+total mgmt nodes = 36
+
+total login nodes = 36
+
+total gateway nodes = 288
+
+total compute nodes = 11304
+
 total node count - 11,664
 
 total core count - 559,872
