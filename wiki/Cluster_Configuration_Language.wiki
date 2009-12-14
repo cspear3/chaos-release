@@ -100,6 +100,6 @@ U_level Name Type
 Name through memory would be required, the rest could be blank. Things after ":" could be used by vendor to put in color, distance and so on. Lables for cables would be made from this info like graph1:pdu1p1 for the power cable, or graph1:sw1p1 for the blue 3ft ethernet cable.
 
 {{{
-NAME    LOCATION NODE_TYPE MHZ  SOCKETS CORES_PER_SOCKET BIOS_DATE MEMORY ECC      POWER_PORT NETWORK1:blue NETWORK2:red     NETWORK3
-graph1  rack1U5  login     2000 4       6                12/12/09  128    S4ECD4ED pdu1p1     sw1p1:3ft     cyclades1p1:5ft  ibsw1p1:6m
+NAME    NODE_TYPE MHZ  SOCKETS CORES_PER_SOCKET BIOS_DATE MEMORY ECC      LOCATION POWER_PORT NETWORK_mgmt:blue NETWORK_console:red NETWORK_ib
+graph1  login     2000 4       6                12/12/09  128    S4ECD4ED rack1U5  pdu1p1     sw1p1:3ft         cyclades1p1:5ft     ibsw1p1:6m
 }}}
