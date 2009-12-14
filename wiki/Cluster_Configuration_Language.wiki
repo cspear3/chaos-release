@@ -97,7 +97,7 @@ U_level Name Type
 
 == Format ==
 
-Name though memory would be required, the rest could be blank. Things after ":" could be used by vendor to put in color, distance and so on. Lables for cables would be made from this info like graph1:pdu1p1 for the power cable, or graph1:sw1p1 for the blue 3ft ethernet cable.
+Name through memory would be required, the rest could be blank. Things after ":" could be used by vendor to put in color, distance and so on. Lables for cables would be made from this info like graph1:pdu1p1 for the power cable, or graph1:sw1p1 for the blue 3ft ethernet cable.
 
 {{{
 NAME    LOCATION NODE_TYPE MHZ  SOCKETS CORES_PER_SOCKET BIOS_DATE MEMORY ECC      POWER_PORT NETWORK1:blue NETWORK2:red     NETWORK3
