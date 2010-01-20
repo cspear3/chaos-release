@@ -1,5 +1,5 @@
+#summary CHAOS Description
 #labels Featured
-#CHAOS Description
 
 == What is CHAOS? ==
 
