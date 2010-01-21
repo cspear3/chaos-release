@@ -1,12 +1,14 @@
 #summary Disclaimer
 
-{{{
 Copyright (C) 2001-2002 The Regents of the University of California.
+
 Produced at Lawrence Livermore National Laboratory.
+<br>
 UCRL-CODE-235514
+<br>
 Title, chaos-release Version 4.0
+<br>
 Author(s) J. Garlick, T. D'Hooge
-}}}
 
 = Discliaimer =
 
