@@ -3,7 +3,7 @@
 
 == What is CHAOS? ==
 
-CHAOS is a Red Hat Linux derived operating system for Linux clusters,
+CHAOS is a CentOS derived operating system for Linux clusters,
 primarily those designed to run MPI programs, but also for visualization
 clusters, Lustre file system server clusters, and technical desktop systems.
 Early releases of CHAOS {{{[1,2,3]}}} were based on Red Hat Linux and used
@@ -14,38 +14,39 @@ exclusively in-house at Lawrence Livermore National Laboratory.
 || CHAOS 2.0 || July 2004 || RHEL 3 || i386,ia64 || Elan3,Elan4 ||
 || CHAOS 3.0 || Oct 2005  || RHEL 4 || i386,ia64,x86_64 || Elan3,Elan4,Infiniband ||
 || CHAOS 4.0/TOSS 1.0 || Feb 2008 || RHEL 5 || x86_64 || Infiniband ||
-|| CHAOS 5.0/TOSS 2.0 || est. Jan 2011 || RHEL 6 || x86_64 || Infiniband ||
+|| CHAOS 5.0/TOSS 2.0 || est. Jan 2011 || CentOS 6/RHEL 6 || x86_64 || Infiniband ||
 
 In 2008, distribution was extended to the Sandia and Los Alamos
 National Laboratories in support of a joint tri-lab cluster procurement.
 CHAOS 4.0 was thus given the external moniker of TOSS 1.0.
 TOSS {{{[4]}}} stands for Tripod Operating System Software.
 
-The plan for 2010 and beyond is to continue to maintain TOSS as the Red
-Hat Enterprise Linux based tri-lab operating system, rebase CHAOS on
-CentOS, and make it publicly available.
+CHAOS 5.0 will be based on the freely redistributable CentOS operating system
+and be made available for public download, while TOSS 2.0 will continue to be
+based on Red Hat Enterprise Linux and used internally.  CHAOS and TOSS will
+be functionally equivalent, but CHAOS will have all non redistributable components,
+such as third party compilers, stripped.  Support for CHAOS will be on a best effort basis.
 
 == Why CHAOS? ==
 
-CHAOS is not rocket science.  It is a bundling of software and an
+CHAOS a bundling of software and an
 associated process that made our lives more sane at LLNL for several years
-as we increased our Linux cluster deployments.  Some of the software bundled
-in CHAOS such as the Lustre file system, the SLURM resource manager,
-the MPI environments, and cluster admin tools are indeed rather clever
-and useful things worthy of study in their own right, but they are all
-available as open source which any HPC site could integrate into their
-environment.  The main reasons it may be useful to leverage CHAOS is:
+as we increased our Linux cluster deployments.  It is not necessary to run CHAOS
+in order to leverage its HPC components such as the SLURM resource manager,
+Lustre file system, and admin tools.  These are
+available as open source which any site could integrate into their
+environment.  The main reasons it may be useful to run CHAOS are:
 
-  * CHAOS must run reliably in HPC production environments at the aforementioned labs;
-  * CHAOS runs on high-performance hardware that is regularly refreshed,
-  * CHAOS is subject to a high degree of scrutiny in the security arena,
+  * Each CHAOS release is subjected to strenuous integration testing on large clusters.
+  * Deficiencies uncovered by the diverse HPC workload at the labs must be addressed quickly by maintenance releases.
+  * CHAOS runs on hardware that is regularly refreshed.
+  * CHAOS security defects are addressed expeditiously.
   * CHAOS contains a selection of software that represents years of experience running large clusters (Linux and otherwise).
 
-On the other hand, the fact that CHAOS is geared toward production computing
-environments may be a negative for labs engaged in operating systems research.
+In summary, the key benefit of CHAOS is that it is geared towards production HPC computing environments.  On the other hand, this fact may be a negative for those 
+engaged in system software research and development.
 For example the CHAOS kernel usually lags far behind kernel.org releases,
-and contains many patches, making it a difficult target for testing new
-kernel facilities.
+and contains many patches, making it a poor platform for developing new kernel facilities.
 
 == What is Included? ==
 
@@ -67,13 +68,13 @@ tree anyway.  That said, some components have to be packaged and included
 just to facilitate reproduceable testing, and to this end we provide a few
 of them primarily designed to install into /opt, wrapped with environment
 modules.  We try to keep them out of the default environment so omissions
-in the user runtime environment LD_LIBRARY_CONF setup for example exhibit
+in the user runtime environment LD_LIBRARY_PATH setup for example exhibit
 as a hard failure rather than the more subtle one you might get from running
 the wrong version of an improperly versioned dynamic library.
 
 Non-free software such as non-GNU compilers, math libraries, totalview
 debugger, etc. are not included in CHAOS due to redistribution restrictions.
-We do package some of these tools for TOSS and could privde spec files and
+We do package some of these tools for TOSS and could provide spec files and
 such should people find that to be useful, but licensing forbids us to
 freely redistribute these packages.
 
