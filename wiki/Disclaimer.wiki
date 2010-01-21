@@ -1,5 +1,4 @@
-#summary Disclaimer
-#keywords Featured
+#summary Legal Disclaimer
 
 Copyright (C) 2001-2002 The Regents of the University of California.
 
