@@ -2,6 +2,14 @@
 
 = Stream =
 
+ Stream is from http://www.cs.virginia.edu/stream/ref.html
+
+ The rpm that contains this test is called tasty_loops. ftp://gdo-lc.ucllnl.org/pub/projects/chaos/4.3/x86_64/RPMS/ . This rpm will be installed if you have the "opt" YUM group installed.
+
+ The stream benchmark is run by `/opt/tasty_loops-0.2/stream/benchmark`
+
+ The benchmark will start running with 1 thread per socket and increase to the number of cores per socket. The variable GOMP_CPU_AFFINITY is used to guarantee that each socket has the same number of threads running on it.
+
  Streamc was compiled with RHEL5's default compiler, 4.1.2 20080704 with CFLAGS -O3 -fopenmp -DDGEMM -DMXMD16 -DLINUX. Better performance can be had by using other compilers and optimizing, but this gives a good idea of relative performance. Note that BIOS upgrades can have a big impact. Be sure that you have the latest release installed.
 
 == AMD 8216, Memory 667MHz ==
