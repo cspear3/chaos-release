@@ -1,0 +1,30 @@
+#Stream Benchmark results
+
+= Stream =
+
+ Streamc was compiled with RHEL5's default compiler, 4.1.2 20080704 with CFLAGS -O3 -fopenmp -DDGEMM -DMXMD16 -DLINUX. Better performance can be had by using other compilers and optimizing, but this gives a good idea of relative performance. Note that BIOS upgrades can have a big impact. Be sure that you have the latest release installed.
+
+== AMD 8216, Memory 667MHz ==
+{{{
+8 cpus
+4 sockets
+2 cpu(s) per socket
+Processor type  Dual-Core AMD Opteron(tm) Processor 8216
+
+Running 1 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:        9772.4832       0.0708       0.0655       0.1124
+Scale:       9408.8509       0.0747       0.0680       0.1152
+Add:        10152.4989       0.1108       0.0946       0.1671
+Triad:      10175.2043       0.1076       0.0943       0.1613
+Running 2 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       13913.3308       0.0471       0.0460       0.0485
+Scale:      13886.7713       0.0471       0.0461       0.0483
+Add:        14758.5534       0.0672       0.0650       0.0698
+Triad:      14827.8482       0.0668       0.0647       0.0697
+}}}
