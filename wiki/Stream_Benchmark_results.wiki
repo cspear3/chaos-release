@@ -69,3 +69,215 @@ Scale:      18051.6634       0.0355       0.0355       0.0355
 Add:        18455.8527       0.0526       0.0520       0.0567
 Triad:      18482.5382       0.0520       0.0519       0.0525
 }}}
+
+== AMD 8380, Memory 667 ==
+{{{
+16 cpus
+4 sockets
+4 cpu(s) per socket
+Processor type  Quad-Core AMD Opteron(tm) Processor 8380
+
+Running 1 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       11817.4895       0.0543       0.0542       0.0544
+Scale:      10912.0104       0.0588       0.0587       0.0589
+Add:        12387.5754       0.0776       0.0775       0.0778
+Triad:      12394.6298       0.0776       0.0775       0.0780
+Running 2 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       14703.4747       0.0436       0.0435       0.0438
+Scale:      14438.7674       0.0445       0.0443       0.0448
+Add:        15299.0126       0.0631       0.0627       0.0634
+Triad:      15309.5413       0.0629       0.0627       0.0636
+Running 3 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       15178.7941       0.0424       0.0422       0.0428
+Scale:      15146.8472       0.0424       0.0423       0.0427
+Add:        16277.5626       0.0592       0.0590       0.0596
+Triad:      16286.3192       0.0591       0.0589       0.0595
+Running 4 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       20124.4082       0.0327       0.0318       0.0393
+Scale:      20052.6991       0.0320       0.0319       0.0320
+Add:        22834.2993       0.0421       0.0420       0.0421
+Triad:      22978.0285       0.0418       0.0418       0.0419
+}}}
+
+== AMD 8431, Memory 553MHz ==
+{{{
+24 cpus
+4 sockets
+6 cpu(s) per socket
+Processor type  Six-Core AMD Opteron(tm) Processor 8431
+
+Running 1 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       16144.9398       0.0399       0.0396       0.0402
+Scale:      15718.5703       0.0410       0.0407       0.0413
+Add:        17382.7889       0.0556       0.0552       0.0560
+Triad:      17463.7601       0.0556       0.0550       0.0559
+Running 2 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       17398.9005       0.0372       0.0368       0.0380
+Scale:      17167.8929       0.0378       0.0373       0.0386
+Add:        19410.7726       0.0505       0.0495       0.0524
+Triad:      19535.2706       0.0498       0.0491       0.0507
+Running 3 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       17978.0365       0.0357       0.0356       0.0360
+Scale:      17702.5037       0.0362       0.0362       0.0364
+Add:        20183.7240       0.0477       0.0476       0.0478
+Triad:      20274.5813       0.0474       0.0473       0.0475
+Running 4 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       18062.3524       0.0355       0.0354       0.0355
+Scale:      18048.0224       0.0355       0.0355       0.0355
+Add:        20361.4198       0.0472       0.0471       0.0473
+Triad:      20462.6189       0.0469       0.0469       0.0470
+Running 5 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       17983.5768       0.0356       0.0356       0.0357
+Scale:      18100.5958       0.0354       0.0354       0.0354
+Add:        20328.2166       0.0473       0.0472       0.0474
+Triad:      20426.3907       0.0471       0.0470       0.0471
+Running 6 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       17952.3067       0.0357       0.0357       0.0357
+Scale:      18061.7447       0.0355       0.0354       0.0355
+Add:        20301.9777       0.0473       0.0473       0.0474
+Triad:      20405.9975       0.0471       0.0470       0.0471
+}}}
+
+== AMD 8431, Memory 667Mhz ==
+{{{
+24 cpus
+4 sockets
+6 cpu(s) per socket
+Processor type  Six-Core AMD Opteron(tm) Processor 8431
+
+Running 1 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       20812.9836       0.0309       0.0308       0.0311
+Scale:      19991.1717       0.0322       0.0320       0.0325
+Add:        23115.8790       0.0417       0.0415       0.0418
+Triad:      23181.6220       0.0416       0.0414       0.0419
+Running 2 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       21977.3261       0.0296       0.0291       0.0306
+Scale:      21643.4825       0.0302       0.0296       0.0310
+Add:        24477.9924       0.0401       0.0392       0.0406
+Triad:      24711.7457       0.0398       0.0388       0.0405
+Running 3 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       22758.0250       0.0283       0.0281       0.0284
+Scale:      22383.7977       0.0287       0.0286       0.0288
+Add:        25474.3825       0.0378       0.0377       0.0380
+Triad:      25561.8733       0.0377       0.0376       0.0378
+Running 4 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       22972.0637       0.0279       0.0279       0.0280
+Scale:      22880.8169       0.0280       0.0280       0.0280
+Add:        25818.2181       0.0372       0.0372       0.0373
+Triad:      25919.2646       0.0371       0.0370       0.0372
+Running 5 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       22917.7372       0.0280       0.0279       0.0281
+Scale:      23041.4723       0.0279       0.0278       0.0280
+Add:        25812.5907       0.0373       0.0372       0.0374
+Triad:      25918.5973       0.0371       0.0370       0.0372
+Running 6 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       23013.4218       0.0279       0.0278       0.0279
+Scale:      23087.2500       0.0278       0.0277       0.0278
+Add:        25894.9281       0.0371       0.0371       0.0372
+Triad:      26023.2915       0.0369       0.0369       0.0370
+}}}
+
+== AMD 8431, Memory 800MHz ==
+{{{
+24 cpus
+4 sockets
+6 cpu(s) per socket
+Processor type  Six-Core AMD Opteron(tm) Processor 8431
+
+Running 1 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       20436.8100       0.0320       0.0313       0.0324
+Scale:      19321.3555       0.0336       0.0331       0.0339
+Add:        21877.3803       0.0448       0.0439       0.0460
+Triad:      21941.8766       0.0447       0.0438       0.0460
+Running 2 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       24494.7445       0.0264       0.0261       0.0266
+Scale:      23924.3022       0.0270       0.0268       0.0273
+Add:        26620.1141       0.0363       0.0361       0.0364
+Triad:      26645.1282       0.0361       0.0360       0.0362
+Running 3 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       26127.6480       0.0246       0.0245       0.0246
+Scale:      25683.1795       0.0250       0.0249       0.0252
+Add:        29266.6272       0.0329       0.0328       0.0329
+Triad:      29385.5955       0.0327       0.0327       0.0328
+Running 4 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       26772.5982       0.0240       0.0239       0.0240
+Scale:      26666.4802       0.0241       0.0240       0.0241
+Add:        30030.8162       0.0320       0.0320       0.0320
+Triad:      30165.1284       0.0319       0.0318       0.0319
+Running 5 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       26547.2780       0.0241       0.0241       0.0242
+Scale:      26706.8067       0.0240       0.0240       0.0241
+Add:        29952.1828       0.0321       0.0321       0.0322
+Triad:      30035.5205       0.0320       0.0320       0.0320
+Running 6 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       26473.4468       0.0242       0.0242       0.0242
+Scale:      26725.6853       0.0240       0.0239       0.0240
+Add:        29852.4762       0.0322       0.0322       0.0322
+Triad:      29992.5650       0.0320       0.0320       0.0321
+}}}
