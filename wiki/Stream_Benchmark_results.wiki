@@ -28,3 +28,44 @@ Scale:      13886.7713       0.0471       0.0461       0.0483
 Add:        14758.5534       0.0672       0.0650       0.0698
 Triad:      14827.8482       0.0668       0.0647       0.0697
 }}}
+
+== AMD 8354, Memory 667Mhz ==
+{{{
+16 cpus
+4 sockets
+4 cpu(s) per socket
+Processor type  Quad-Core AMD Opteron(tm) Processor 8354
+
+Running 1 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       10278.6610       0.0623       0.0623       0.0625
+Scale:       9671.6071       0.0662       0.0662       0.0662
+Add:        10181.2505       0.0943       0.0943       0.0943
+Triad:      10196.1521       0.0942       0.0942       0.0942
+Running 2 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       11445.2863       0.0560       0.0559       0.0560
+Scale:      11650.7939       0.0550       0.0549       0.0551
+Add:        11537.7703       0.0832       0.0832       0.0833
+Triad:      11514.6412       0.0835       0.0834       0.0836
+Running 3 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       11556.2975       0.0555       0.0554       0.0556
+Scale:      11680.7561       0.0549       0.0548       0.0550
+Add:        11640.0330       0.0826       0.0825       0.0827
+Triad:      11625.3803       0.0826       0.0826       0.0827
+Running 4 threads per socket
+Array size = 40000000, Offset = 0
+Total memory required = 915.5 MB.
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       18125.1616       0.0353       0.0353       0.0354
+Scale:      18051.6634       0.0355       0.0355       0.0355
+Add:        18455.8527       0.0526       0.0520       0.0567
+Triad:      18482.5382       0.0520       0.0519       0.0525
+}}}
