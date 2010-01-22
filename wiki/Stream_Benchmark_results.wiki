@@ -4,7 +4,7 @@
 
  Stream is from http://www.cs.virginia.edu/stream/ref.html
 
- The rpm that contains this test is called tasty_loops. ftp://gdo-lc.ucllnl.org/pub/projects/chaos/4.3/x86_64/RPMS/ . This rpm will be installed if you have the "opt" YUM group installed.
+ The rpm that contains this test is called tasty_loops. It can be found at ftp://gdo-lc.ucllnl.org/pub/projects/chaos/4.3/x86_64/RPMS/ . This rpm will be installed if you have the "opt" YUM group installed.
 
  The stream benchmark is run by `/opt/tasty_loops-0.2/stream/benchmark`
 
