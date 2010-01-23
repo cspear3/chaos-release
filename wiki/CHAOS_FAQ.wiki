@@ -23,3 +23,7 @@ Section "Files"
     FontPath        "unix/:7100"
 EndSection
 }}}
+ and in the Device section of xorg.conf change your Driver to
+{{{
+    Driver          "nvidia"
+}}}
