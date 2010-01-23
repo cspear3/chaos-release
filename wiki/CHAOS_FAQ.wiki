@@ -6,7 +6,7 @@
  A: ftp://gdo-lc.ucllnl.org/pub/projects/chaos
 
 *Q: I have chaos installed how can I update it?*
- A: `sudo yum -c ftp://gdo-lc.ucllnl.org/pub/projects/chaos/chaos.centos.repo --enablerepo=4.3* update`
+ A: "`sudo yum -c ftp://gdo-lc.ucllnl.org/pub/projects/chaos/chaos.centos.repo --enablerepo=4.3* update`"
 
 *Q: How do I get a list of YUM groups?*
  A: `sudo yum -c ftp://gdo-lc.ucllnl.org/pub/projects/chaos/chaos.centos.repo --disablerepo=* --enablerepo=4.3* grouplist`
