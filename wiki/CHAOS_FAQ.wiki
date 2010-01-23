@@ -27,3 +27,4 @@ EndSection
 {{{
     Driver          "nvidia"
 }}}
+ also make sure you have the nvidia rpm installed
