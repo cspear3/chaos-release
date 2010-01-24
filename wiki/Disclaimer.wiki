@@ -1,7 +1,5 @@
-#summary Legal Disclaimer
 #labels Featured
-
-Copyright (C) 2001-2002 The Regents of the University of California.
+Copyright (C) 2001-2010 The Regents of the University of California.
 
 Produced at Lawrence Livermore National Laboratory.
 <br>
