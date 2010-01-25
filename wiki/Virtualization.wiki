@@ -111,3 +111,26 @@ title linux
  logout and shutdown the image. I then edit the xml image again, change dev='cdrom' to dev='hd' and remove the source file of the cdrom area. I then boot my new KVM image.
 
  What a hack! Haven't looked, I am sure I can pass to virsh boot info and source files for cdrom. Not sure how to get around the grub install piece.
+
+* Bridging a interface for domU using KVM*
+ On host node
+{{{
+ifconfig virbr0 down
+
+cat /etc/sysconfig/network-scripts/ifcfg-eth1 
+DEVICE=eth1
+ONBOOT=yes
+BRIDGE=br0
+
+cat /etc/sysconfig/network-scripts/ifcfg-br0
+DEVICE=br0
+ONBOOT=yes
+TYPE=Bridge
+}}}
+ And in the XML file for the node
+{{{
+    <interface type='bridge'>
+      <source bridge='br0'/>
+      <mac address='00:16:3E:4D:65:05'/>
+    </interface>
+}}}
