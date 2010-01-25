@@ -2,4 +2,62 @@
 
 = Virtualization notes =
 
-*CHAOS 4.3 virtualization*
+* - verify you have hardware virtualization support*
+ egrep "svm|vmx" /proc/cpuinfo
+
+* Creating a filesystem*
+ qemu-img create my_image.img 100G
+
+* Create a COW filesystem*
+  qemu-img create my_image.img -f qcow2 100G
+
+* Create image to be used by multiple nodes using COW*
+ qemu-img create -b my_image.img -f qcow2 node1.img
+
+ qemu-img create -b my_image.img -f qcow2 node2.img
+
+* console install using libvirt*
+virt-install -n my_domain -r 2048 --vcpus=2 \
+             --disk path=/tmp/my_image.img,device=disk \
+             --cdrom=/tmp/install_dvd.iso \
+             --vnc --os-type linux --accelerate  --hvm
+
+* connecting to the console*
+ virt-viewer my_domain
+
+* sending console to virtual serial port*
+ virsh console my_domain # requires the following in domain image
+{{{
+
+/etc/securetty
+ttyS1
+ttyS0
+
+/etc/inittab
+s0:2345:respawn:/sbin/agetty -L 115200 ttyS0
+
+/boot/grub/grub.conf
+title linux
+        root (hd0,0)
+        kernel /boot/vmlinuz-2.6.9-55.ELsmp ro root=/dev/hda1 console=tty0 console=ttyS0,115200
+        initrd /boot/initrd-2.6.9-55.ELsmp.img
+}}}
+
+* Virsh commands*
+ virsh dumpxml DOMAIN # dump xml info on domain
+
+ virsh define my_domain.xml # define a domain based on xml file
+
+ virsh create my_domain.xml # start a domain based on xml file
+
+ virsh start my_domain # start my domain, this domain will need defined.
+
+ virsh shutdown my_domain # run init 0 on my domain
+
+ virsh destroy my_domain # powers off my doamin
+
+ virsh undefine my_domain # undefine the domain
+
+ virsh edit my_domain # edit attributes of a domain.
+
+ virt-viewer my_domain # 
