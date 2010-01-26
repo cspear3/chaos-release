@@ -17,11 +17,12 @@
  qemu-img create -b my_image.img -f qcow2 node2.img
 
 * console install using libvirt*
-virt-install -n my_domain -r 2048 --vcpus=2 \
+{{{
+ virt-install -n my_domain -r 2048 --vcpus=2 \
              --disk path=/tmp/my_image.img,device=disk \
              --cdrom=/tmp/install_dvd.iso \
              --vnc --os-type linux --accelerate  --hvm
-
+}}}
 * connecting to the console*
  virt-viewer my_domain
 
