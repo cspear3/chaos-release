@@ -135,3 +135,41 @@ TYPE=Bridge
       <mac address='00:16:3E:4D:65:05'/>
     </interface>
 }}}
+
+* KVM PCI passthrough*
+ you need to remove the pci device from the host. Pass the location of the device based on it's `lspci` location. For example 03:00.0 Here is a bad script to do it, I wouldn't use it, but it does give you the idea
+{{{
+#!/bin/bash
+
+device=$1
+
+modprobe pci_stub
+
+ID=`lspci -n |grep ^${device} |awk  '{gsub(":"," ")}{print $4,$5}'`
+LOCATION="0000:${device}"
+
+echo "${ID}" > /sys/bus/pci/drivers/pci-stub/new_id
+echo "${LOCATION}" > /sys/bus/pci/devices/${LOCATION}/driver/unbind
+echo "${LOCATION}" > /sys/bus/pci/drivers/pci-stub/bind
+}}}
+
+ There are 2 ways to give this device to your domU, first is at boot time. In the xml file in the devices section add something like:
+{{{
+    <hostdev mode='subsystem' type='pci'>
+      <source>
+        <address bus='0x03' slot='0x00' function='0x0'/>
+      </source>
+    </hostdev>
+}}}
+ where the 3 hex numbers correspond to your device when you run `lcpsi`
+
+ The second way is to just have a separate xml file with the same above info, have your domU booted then run on the host:
+{{{
+virsh attach-device YOUR_DOMAIN_NAME YOU_XML_FILE
+}}}
+
+ For whatever reason, the above only works on a Intel node. On an AMD node I get the error
+{{{
+error: internal error Not resetting active device 0000:03:00.0
+}}}
+ looking into it
