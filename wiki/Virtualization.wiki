@@ -117,11 +117,10 @@ title linux
  Make sure virbr0 is up, and if so, you just need something like this in your xml file:
 {{{
     <interface type='network'>
-      <mac address='54:52:00:39:46:ef'/>
       <source network='default'/>
-      <target dev='vnet0'/>
+      <mac address='00:16:3E:4D:65:05'/>
+      <model type='virtio'/>
     </interface>
-
 }}}
 
 * Bridging a interface for domU using KVM*
