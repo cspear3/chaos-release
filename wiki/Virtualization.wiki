@@ -26,7 +26,7 @@
 * connecting to the console*
  virt-viewer my_domain
 
-* sending console to virtual serial port*
+* KVM, sending console to virtual serial port*
  virsh console my_domain # requires the following in domain image
 {{{
 
@@ -196,6 +196,18 @@ error: internal error Not resetting active device 0000:03:00.0
 }}}
  looking into it
 
+* Xen pciback*
+ To remove the device from dom0, make sure dom0 is not using it, and find your device using `lspci` and run:
+{{{
+modprobe pciback 'hide=(0000:07:00.0)'
+}}}
+
+ Then when you start your xen image run something like:
+{{{
+  xm create -c node_1 pci=07:00.0 vm.cfg
+}}}
+ And the domU should see the pci device.
+
 * Booting a Xen image diskless*
  your pxelinux.cfg file should have something like this, which also gets you your serial console on ttyS0
 {{{
@@ -203,6 +215,6 @@ label linux
    kernel mboot.c32
    append xen-64bit.gz dom0_mem=543M console=com1 com1=115200,8n1 --- vmlinuz-2.6.18-128.2.1.4.9.el5xen console=ttyS0,115200n8 --- initrd-2.6.18-128.2.1.4.9.el5xen
 }}}
- The mboot.c32 comes with the syslinux rpm. copy this file to into the /boot directory of your diskless image.
+ The mboot.c32 comes with the syslinux rpm. copy this file to into the /boot directory of your diskless image. Don't put any ttyS0 info into your inittab, it is not needed to get this console like it is in KVM.
 
  
