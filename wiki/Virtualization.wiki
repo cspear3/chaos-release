@@ -113,6 +113,17 @@ title linux
 
  What a hack! Haven't looked, I am sure I can pass to virsh boot info and source files for cdrom. Not sure how to get around the grub install piece.
 
+* NAT interface in KVM*
+ Make sure virbr0 is up, and if so, you just need something like this in your xml file:
+{{{
+    <interface type='network'>
+      <mac address='54:52:00:39:46:ef'/>
+      <source network='default'/>
+      <target dev='vnet0'/>
+    </interface>
+
+}}}
+
 * Bridging a interface for domU using KVM*
  On host node
 {{{
@@ -135,6 +146,7 @@ TYPE=Bridge
       <mac address='00:16:3E:4D:65:05'/>
     </interface>
 }}}
+
 
 * Bridging a interface for domU using Xen*
  On host node, don't allow Xen to do things, just do it like you do in KVM
