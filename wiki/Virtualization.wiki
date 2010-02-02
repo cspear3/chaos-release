@@ -136,6 +136,28 @@ TYPE=Bridge
     </interface>
 }}}
 
+* Bridging a interface for domU using Xen*
+ On host node, don't allow Xen to do things, just do it like you do in KVM
+{{{
+cat /etc/xen/scripts/network-bridges
+/bin/true
+
+cat /etc/sysconfig/network-scripts/ifcfg-eth1 
+DEVICE=eth1
+ONBOOT=yes
+BRIDGE=br0
+
+cat /etc/sysconfig/network-scripts/ifcfg-br0
+DEVICE=br0
+ONBOOT=yes
+TYPE=Bridge
+}}}
+ And in the XML file for the node
+ And in the cfg file have something like
+{{{
+vif = ['bridge=bro,mac=00:16:3E:4D:66:01,type=netfront']
+}}}
+
 * KVM PCI passthrough*
  you need to remove the pci device from the host. Pass the location of the device based on it's `lspci` location. For example 03:00.0 Here is a bad script to do it, I wouldn't use it, but it does give you the idea
 {{{
