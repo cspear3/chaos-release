@@ -195,3 +195,14 @@ virsh attach-device YOUR_DOMAIN_NAME YOU_XML_FILE
 error: internal error Not resetting active device 0000:03:00.0
 }}}
  looking into it
+
+* Booting a Xen image diskless*
+ your pxelinux.cfg file should have something like this, which also gets you your serial console on ttyS0
+{{{
+label linux
+   kernel mboot.c32
+   append xen-64bit.gz dom0_mem=543M console=com1 com1=115200,8n1 --- vmlinuz-2.6.18-128.2.1.4.9.el5xen console=ttyS0,115200n8 --- initrd-2.6.18-128.2.1.4.9.el5xen
+}}}
+ The mboot.c32 comes with the syslinux rpm. copy this file to into the /boot directory of your diskless image.
+
+ 
