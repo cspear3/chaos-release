@@ -1,13 +1,13 @@
 #Ideas for Chaos SC10 tutorial
 
-= CHAOS =
+= CHAOS ( .5 hrs ) =
   * History
   * CHAOS Goals
   * What it is
   * Tools
   * Supported Hardware ( Nodes, PDUs, BMCs, Serial Concentrators, Interconnects )
 
-= Buying a Cluster =
+= Buying a Cluster ( .5 hrs ) =
   * What are your requirements
   * Talking to Vendors
   * Maximizing MTBF
@@ -16,24 +16,24 @@
   * Statement of Work
   * Things to make your life easier (lables, cable mgmt, cable port layout, serviceability)
 
-= Cluster Integration =
+= Cluster Integration ( 3 hrs ) =
   * Required information from Vendor
   * Installing ( Hands on from here on )
     * Configuration management ( Go over what to configure, why we do certain things. sysctl, pam stacks, conman, powerman, routes, IPs  )
     * Cluster installation
  
-= Using Cluster Tools =
+= Using Cluster Tools ( .5 hrs ) =
   * Cluster Diags
   * Powerman
   * Conman
   * Pdsh
   * Slurm
 
-= Users using the Cluster =
+= Users using the Cluster ( .5 hrs ) =
   * modules
   * slurm
 
-= Debugging tools =
+= Debugging tools ( .5 hrs ) =
   * slurm options
   * sys-req
 
