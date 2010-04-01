@@ -18,8 +18,9 @@
 
 = Cluster Integration =
   * Required information from Vendor
-  * Configuration management ( Go over what to configure, why we do certain things. sysctl, pam stacks, conman, powerman, routes, IPs  )
-  * Cluster installation
+  * Installing ( Hands on from here on )
+    * Configuration management ( Go over what to configure, why we do certain things. sysctl, pam stacks, conman, powerman, routes, IPs  )
+    * Cluster installation
  
 = Using Cluster Tools =
   * Cluster Diags
