@@ -1,0 +1,41 @@
+#Ideas for Chaos SC10 tutorial
+
+= CHAOS =
+  * History
+  * CHAOS Goals
+  * What it is
+  * Tools
+  * Supported Hardware ( Nodes, PDUs, BMCs, Serial Concentrators, Interconnects )
+
+= Buying a Cluster =
+  * What are your requirements
+  * Talking to Vendors
+  * Maximizing MTBF
+  * Tier 1 vs Tier 2/3
+  * Request for Proposal
+  * Statement of Work
+  * Things to make your life easier (lables, cable mgmt, cable port layout, serviceability)
+
+= Cluster Integration =
+  * Required information from Vendor
+  * Configuration management ( Go over what to configure, why we do certain things. sysctl, pam stacks, conman, powerman, routes, IPs  )
+  * Cluster installation
+ 
+= Using Cluster Tools =
+  * Cluster Diags
+  * Powerman
+  * Conman
+  * Pdsh
+  * Slurm
+
+= Users using the Cluster =
+  * modules
+  * slurm
+
+= Debugging tools =
+  * jr?
+  * slurm options
+  * sys-req
+
+= Cluster examples =
+ * TLCC2?
