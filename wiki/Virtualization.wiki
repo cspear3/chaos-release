@@ -227,5 +227,31 @@ label linux
    append xen-64bit.gz dom0_mem=543M console=com1 com1=115200,8n1 --- vmlinuz-2.6.18-128.2.1.4.9.el5xen console=ttyS0,115200n8 --- initrd-2.6.18-128.2.1.4.9.el5xen
 }}}
  The mboot.c32 comes with the syslinux rpm. copy this file to into the /boot directory of your diskless image. Don't put any ttyS0 info into your inittab, it is not needed to get this console like it is in KVM.
+ When using nfsroot, /usr/share/nfsroot/initrd-init needs changed like the following:
+{{{
+<    # Commented out for Xen testing
+<    #if bootmac=$(nrf_bootmac); then
+<    #   if ! nrf_fixeth0 ${bootmac}; then 
+<    #      echo "${prog}: error: failed to reassign eth0 to device ${bootmac}" >&2
+<    #      panic
+<    #   fi
+<    #fi
+---
+>    if bootmac=$(nrf_bootmac); then
+>       if ! nrf_fixeth0 ${bootmac}; then 
+>          echo "${prog}: error: failed to reassign eth0 to device ${bootmac}" >&2
+>          panic
+>       fi
+>    fi
+168,175c167,171
+< # Commented out for Xen testing
+< #if nrf_bootmac >/dev/null; then
+< #   sysroot_nfs
+< #else
+< #   sysroot_cdrom
+< #fi
+< 
+< sysroot_nfs
+}}}
 
  
