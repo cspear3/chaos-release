@@ -166,7 +166,7 @@ TYPE=Bridge
  And in the XML file for the node
  And in the cfg file have something like
 {{{
-vif = ['bridge=bro,mac=00:16:3E:4D:66:01,type=netfront']
+vif = ['bridge=br0,mac=00:16:3E:4D:66:01,type=netfront']
 }}}
 
 * KVM PCI passthrough*
