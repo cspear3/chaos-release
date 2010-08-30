@@ -6,13 +6,13 @@
  A: ftp://gdo-lc.ucllnl.org/pub/projects/chaos
 
 *Q: I have chaos installed how can I update it?*
- A: `sudo yum -c ftp://gdo-lc.ucllnl.org/pub/projects/chaos/chaos.centos.repo --enablerepo=4.3* update`
+ A: `sudo yum -c ftp://gdo-lc.ucllnl.org/pub/projects/chaos/chaos.centos.repo --enablerepo=4.4* update`
 
 *Q: How do I get a list of YUM groups?*
- A: `sudo yum -c ftp://gdo-lc.ucllnl.org/pub/projects/chaos/chaos.centos.repo --disablerepo=* --enablerepo=4.3* grouplist`
+ A: `sudo yum -c ftp://gdo-lc.ucllnl.org/pub/projects/chaos/chaos.centos.repo --disablerepo=* --enablerepo=4.4* grouplist`
 
 *Q: How do I install a YUM group?*
- A: `yum -c ftp://gdo-lc.ucllnl.org/pub/projects/chaos/chaos.centos.repo --disablerepo=* --enablerepo=4.3* groupinstall YUM_GROUP`
+ A: `yum -c ftp://gdo-lc.ucllnl.org/pub/projects/chaos/chaos.centos.repo --disablerepo=* --enablerepo=4.4* groupinstall YUM_GROUP`
  
  where YUM_GROUP is the group you want.
 
