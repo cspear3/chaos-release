@@ -22,7 +22,7 @@
 /usr/nvidia/lib
 /usr/nvidia/lib64
 }}}
- and in /etc/X11/xorg.conf add
+ run `ldconfig` and in /etc/X11/xorg.conf add
 {{{
 Section "Files"
     ModulePath      "/usr/nvidia/X11R6/lib/modules"
