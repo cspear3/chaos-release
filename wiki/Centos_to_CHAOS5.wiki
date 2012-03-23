@@ -1,10 +1,17 @@
-#Installing CHAOS5 via Centos
+
 
 = Introduction =
 
 Download and install
 
 http://mirrors.kernel.org/centos/6.2/isos/x86_64/CentOS-6.2-x86_64-minimal.iso
+
+put node on network
+
+/etc/sysconfig/network-scripts/ifcfg-eth0
+
+ONBOOT=yes
+BOOTPROTO=dhcp
 
 = Details =
 
