@@ -1,4 +1,3 @@
-
 = Introduction =
 
 Download and install
@@ -17,6 +16,7 @@ yum update
 
 reboot
 
+rpm -Uv ftp://gdo-lc.ucllnl.org/pub/projects/chaos/5.0/x86_64/epel-release.rpm
 
 
 = Details =
