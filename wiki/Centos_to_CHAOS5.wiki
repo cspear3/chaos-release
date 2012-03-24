@@ -20,6 +20,10 @@ rpm -Uv ftp://gdo-lc.ucllnl.org/pub/projects/chaos/5.0/x86_64/chaos-release.rpm
 
 rpm -Uv ftp://gdo-lc.ucllnl.org/pub/projects/chaos/5.0/x86_64/epel-release.rpm
 
+yum install distro-tools
+
+yum install `distro_list -y Base`
+
 
 = Details =
 
