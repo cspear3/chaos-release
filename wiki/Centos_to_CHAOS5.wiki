@@ -1,4 +1,4 @@
-= Introduction =
+= Updating CentOS to CHAOS 5 =
 
 Download and install
 
@@ -16,6 +16,7 @@ yum update
 
 reboot
 
+{{{
 rpm -Uv ftp://gdo-lc.ucllnl.org/pub/projects/chaos/5.0/x86_64/chaos-release.rpm
 
 rpm -Uv ftp://gdo-lc.ucllnl.org/pub/projects/chaos/5.0/x86_64/epel-release.rpm
@@ -23,11 +24,4 @@ rpm -Uv ftp://gdo-lc.ucllnl.org/pub/projects/chaos/5.0/x86_64/epel-release.rpm
 yum install distro-tools
 
 yum install `distro_list -y Base`
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+}}}
