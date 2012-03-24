@@ -4,15 +4,20 @@ Download and install
 
 http://mirrors.kernel.org/centos/6.2/isos/x86_64/CentOS-6.2-x86_64-minimal.iso
 
-put node on network
+put node on network, if not on the network, this may help. Edit:
 
 /etc/sysconfig/network-scripts/ifcfg-eth0
+
+and add:
 
 ONBOOT=yes
 
 BOOTPROTO=dhcp
 
+{{{
+/etc/init.d/network restart
 yum update
+}}}
 
 reboot
 
