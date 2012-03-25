@@ -27,7 +27,7 @@ yum groupinstall Chaos.Base
 
 }}}
 
-== Install RPMS similar to production systems ==
+== Installing RPMS similar to LLNL production systems ==
 
 {{{
 
