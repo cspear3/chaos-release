@@ -23,6 +23,14 @@ rpm -Uv ftp://gdo-lc.ucllnl.org/pub/projects/chaos/5.0/x86_64/chaos-release.rpm
 
 rpm -Uv ftp://gdo-lc.ucllnl.org/pub/projects/chaos/5.0/x86_64/epel-release.rpm
 
-yum groupinstall Chaos.Base Chaos.Opt
+yum groupinstall Chaos.Base
+
+}}}
+
+== Install RPMS similar to production systems ==
+
+{{{
+
+yum group install Chaos.Opt Chaos.Opt.Openib Chaos.Openib Chaos.Desktop Chaos.Slurm
 
 }}}
