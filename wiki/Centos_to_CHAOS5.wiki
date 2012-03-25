@@ -4,7 +4,7 @@ Download and install
 
 http://mirrors.kernel.org/centos/6.2/isos/x86_64/CentOS-6.2-x86_64-minimal.iso
 
-If not already get your node on the network, example edit:
+If not already on the network, edit:
 
 /etc/sysconfig/network-scripts/ifcfg-eth0
 
