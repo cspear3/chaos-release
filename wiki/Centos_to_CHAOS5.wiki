@@ -31,6 +31,6 @@ yum groupinstall Chaos.Base
 
 {{{
 
-yum group install Chaos.Opt Chaos.Opt.Openib Chaos.Openib Chaos.Desktop Chaos.Slurm
+yum groupinstall Chaos.Opt Chaos.Opt.Openib Chaos.Openib Chaos.Desktop Chaos.Slurm
 
 }}}
