@@ -26,11 +26,3 @@ rpm -Uv ftp://gdo-lc.ucllnl.org/pub/projects/chaos/current/x86_64/epel-release.r
 yum groupinstall Chaos.Base
 
 }}}
-
-== Installing RPMS similar to LLNL production systems ==
-
-{{{
-
-yum groupinstall Chaos.Opt Chaos.Opt.Openib Chaos.Openib Chaos.Desktop Chaos.Slurm
-
-}}}
