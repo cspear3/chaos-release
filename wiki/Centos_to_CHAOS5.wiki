@@ -1,4 +1,4 @@
-= Updating CentOS to CHAOS 5 =
+= Installing CHAOS 5 rpms on CentOS =
 
 Download and install
 
