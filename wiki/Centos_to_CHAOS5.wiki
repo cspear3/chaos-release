@@ -61,3 +61,4 @@ openmpi-1.6-pgi
 pathscale-3.2
 pgi-12.5
 pgi-8.0
+dts
