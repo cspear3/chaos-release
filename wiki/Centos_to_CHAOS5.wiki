@@ -27,7 +27,7 @@ yum groupinstall Chaos.Base
 
 }}}
 
-== Things you won't get that are in TOSS ==
+== Useful things you won't get that are in TOSS ==
 
 acml-gnu-4.4
 acml-intel-4.4
